@@ -1,0 +1,67 @@
+:root {
+	--main-font: "Jost", sans-serif;
+	--main-color-text: #1b1b1d;
+	--secondary-color-text: #64646a;
+	--white-color: #ffffff;
+	--yellow-color: #ffb700;
+	--bgc-hero: #eeeff1;
+	--color: #f3f4f5;
+  --btn-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+}
+
+body {
+	color: var(--main-color-text);
+	font-family: var(--main-font);
+	background-color: var(--white-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+button {
+	display: block;
+	/* border-radius: 25px; */
+	border: none;
+	cursor: pointer;
+}
+.container {
+	width: 1270px;
+	/* width: 1200px; */
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.btn {
+  min-width: 173px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.73; /* 26/15 */
+	text-transform: uppercase;
+	color: var(--white-color);
+	background-color: var(--main-color-text);
+	border: transparent;
+}
+.btn:hover,
+.btn:focus {
+	color: var(--yellow-color);
+	box-shadow: var(--btn-shadow);
+}
