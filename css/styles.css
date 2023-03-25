@@ -7,6 +7,7 @@
 	--bgc-hero: #eeeff1;
 	--color: #f3f4f5;
   --btn-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+  --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -59,6 +60,7 @@ button {
 	color: var(--white-color);
 	background-color: var(--main-color-text);
 	border: transparent;
+  transition: color var(--time-function);
 }
 .btn:hover,
 .btn:focus {
