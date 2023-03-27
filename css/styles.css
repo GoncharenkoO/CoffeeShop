@@ -4,9 +4,14 @@
 	--secondary-color-text: #64646a;
 	--white-color: #ffffff;
 	--yellow-color: #ffb700;
+	--yellow-accent: #ceba87;
 	--bgc-hero: #eeeff1;
 	--color: #f3f4f5;
 	--btn-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+	--button-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+		7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	--after-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002,
+		4px 4px 5px 0px #0001;
 	--time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -52,20 +57,44 @@ button {
 	padding: 0 15px;
 }
 .btn {
+	position: relative;
+	display: inline-block;
 	min-width: 173px;
+	border: transparent;
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 1.73; /* 26/15 */
-	text-transform: uppercase;
 	color: var(--white-color);
 	background-color: var(--main-color-text);
-	border: transparent;
-	transition: color var(--time-function);
+	outline: none;
+	box-shadow: var(--button-shadow);
+	transition: color var(--time-function), box-shadow var(--time-function);
+	text-transform: uppercase;
 }
 .btn:hover,
 .btn:focus {
 	color: var(--yellow-color);
 	box-shadow: var(--btn-shadow);
+}
+.btn::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	box-shadow: var(--after-shadow);
+	transition: box-shadow var(--time-function);
+}
+.btn:hover::after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+.btn:active {
+	top: 2px;
 }
 .section-title {
 	font-weight: 800;

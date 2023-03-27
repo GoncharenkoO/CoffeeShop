@@ -12,6 +12,15 @@
 		/>
 		<title>Coffee Shop</title>
 		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+
+		<link
 			rel="icon"
 			type="image/png"
 			href="./images/favicon.png"
@@ -110,7 +119,7 @@
 							<h1 class="hero-title">Alowishus Delicious Coffee</h1>
 							<img
 								class="hero-img"
-								src="./images/brand.png"
+								src="./images/hero/brand.png"
 								alt="Brand"
 							/>
 						</div>
@@ -118,55 +127,130 @@
 							A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious
 							coffee’s.
 						</p>
-						<a
-							class="hero-btn btn"
-							href=""
-							>Download App</a
-						>
-						<a
-							class="hero-link"
-							href=""
-							>Shop Coffee</a
-						>
+						<div class="hero-right-link">
+							<a
+								class="hero-btn btn"
+								href=""
+								>Download App</a
+							>
+							<a
+								class="hero-link"
+								href=""
+								>Shop Coffee</a
+							>
+						</div>
 					</div>
 					<div class="hero-right">
 						<div class="hero-right-picture">
 							<img
 								class="hero-brand"
-								src="./images/brand-big.png"
+								src="./images/hero/brand-big.png"
 								alt="Brand-big"
 							/>
 						</div>
 						<div class="hero-right-img">
 							<img
+								width="700"
 								class="hero-picture"
-								src="./images/cup.png"
+								src="./images/hero/cup.jpg"
 								alt="Cup"
 							/>
+							<div class="hero-star">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="hero-star-text">
+									4.9 out of 5 Overall Star Rating for All Local Business.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="section explore">
-				<h2 class="section-title centered explore-title">Explore Our Alowishus</h2>
-				<p class="section-text centered explore-text">
-					A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
-				</p>
-				<ul>
-					<li>
-            <h3>Our Catering</h3>
-            <p>Alowishus Catering, delicious drop off Catering</p>
-          </li>
-					<li>
-            <h3>The Food</h3>
-            <p>Our entire menu is available as dine in or takeaway.</p>
-          </li>
-					<li>
-            <h3>The Gelato</h3>
-          </li>
-				</ul>
+				<div class="container explore-container">
+					<h2 class="section-title centered explore-title">Explore Our Alowishus</h2>
+					<p class="section-text centered explore-text">
+						A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious
+						coffee’s.
+					</p>
+					<ul class="explore-list">
+						<li class="explore-item">
+							<a
+								href=""
+								class="explore-link"
+							>
+								<div class="explore-thumb">
+									<h3 class="explore-subtitle">Our Catering</h3>
+									<p class="section-text explore-subtext">
+										Alowishus Catering, delicious drop off Catering
+									</p>
+								</div>
+								<div class="explore-img">
+									<svg
+										width="150"
+										height="150"
+									>
+										<use href="./images/sprite.svg#icon-dinner"></use>
+									</svg>
+								</div>
+                 <button type="button" class="btn explore-btn">Discover more</button>
+							</a>
+						</li>
+						<li class="explore-item">
+							<a
+								href=""
+								class="explore-link"
+							>
+								<div class="explore-thumb">
+									<h3 class="explore-subtitle">The Food</h3>
+									<p class="section-text explore-subtext">
+										Our entire menu is available as dine in or takeaway.
+									</p>
+								</div>
+								<div class="explore-img">
+									<svg
+										width="150"
+										height="150"
+									>
+										<use href="./images/sprite.svg#icon-fast-food"></use>
+									</svg>
+								</div>
+                <button type="button" class="btn explore-btn">Discover more</button>
+							</a>
+						</li>
+						<li class="explore-item">
+							<a
+								href=""
+								class="explore-link"
+							>
+								<div class="explore-thumb">
+									<h3 class="explore-subtitle">The Gelato</h3>
+									<p class="section-text explore-subtext">
+										Life is like GELATO, enjoy it before it melts.
+									</p>
+								</div>
+								<div class="explore-img">
+									<svg
+										width="150"
+										height="150"
+									>
+										<use href="./images/sprite.svg#icon-ice-cream"></use>
+									</svg>
+								</div>
+                <button type="button" class="btn explore-btn">Discover more</button>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 		<footer></footer>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="./js/star.js"></script>
 	</body>
 </html>
