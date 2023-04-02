@@ -1,21 +1,25 @@
-const swiper = new Swiper(".swiper", {
-	// Optional parameters
-	direction: "horizontal",
-	loop: true,
+const slider = document.querySelector(".swiper-container");
 
-	// If we need pagination
+let mySwiper = new Swiper(slider, {
+	slidesPerView: 3,
+	spaceBetween: 10,
+	centeredSlides: true,
+	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
+		clickable: true,
+		dynamicBullets: true,
 	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-
-	// And if we need scrollbar
-	scrollbar: {
-		el: ".swiper-scrollbar",
-	},
+	grabCursor: true,
+	mousewheel: true,
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+		pageUpDown: true,
+  },
+  autoHeight: true,
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev',
+	// },
 });

@@ -50,6 +50,9 @@ button {
 	border: none;
 	cursor: pointer;
 }
+.section {
+	position: relative;
+}
 .container {
 	width: 1270px;
 	/* width: 1200px; */
@@ -61,9 +64,10 @@ button {
 	display: inline-block;
 	min-width: 173px;
 	border: transparent;
+	border-radius: 126px;
 	font-weight: 500;
-	font-size: 15px;
-	line-height: 1.73; /* 26/15 */
+	font-size: 18px;
+	line-height: 1.66; /* 30/18 */
 	color: var(--white-color);
 	background-color: var(--main-color-text);
 	outline: none;
@@ -97,6 +101,7 @@ button {
 	top: 2px;
 }
 .section-title {
+  margin-bottom: 30px;
 	font-weight: 800;
 	font-size: 64px;
 	line-height: 1.09; /* 70/64 */
@@ -111,7 +116,7 @@ button {
 	color: var(--secondary-color-text);
 }
 .wrapper {
-  	background: linear-gradient(
+	background: linear-gradient(
 		173.34deg,
 		#ffffff 0%,
 		#ffffff 0%,
